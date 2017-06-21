@@ -1,0 +1,27 @@
+<h1>Tweet</h1>
+<p>
+    <%= @tweet.content %>
+</p>
+
+<h2>New comment</h2>
+
+
+<%= form_for :comment, url: tweet_comments_path(@tweet) do |form| %>
+
+    <%= form.text_area :content %>
+    <%= form.submit %>
+
+
+<% end %>
+
+<h2>Comments</h2>
+<ol>
+    
+    <% @tweet.comments.each do |comment| %>
+    <li>
+        <%= comment.content %>
+    </li>
+    <% end%>
+</ol>
+
+<%= link_to "Back to tweets", tweets_path %>
