@@ -6,6 +6,8 @@ def index
 end
 def show
 		@article = Article.find(params[:id])
+    @comment = Comment.new
+    @comment.article_id = @article.id
 end
 	def new
 		@article = Article.new
@@ -39,5 +41,12 @@ def update
 
   redirect_to article_path(@article)
 end
+def new
+  @comment = Comment.new
+  @comment.article_id = @article.id
+
+  redirect_to article_path(@comment.article)
+end
+
 
 end

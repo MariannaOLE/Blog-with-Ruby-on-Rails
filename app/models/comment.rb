@@ -1,5 +1,3 @@
 class Comment < ActiveRecord::Base
-  belongs_to :tweet
-  
-  validates :content, presence: true
+  belongs_to :article
 end

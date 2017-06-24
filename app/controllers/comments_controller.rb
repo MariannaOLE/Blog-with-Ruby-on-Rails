@@ -1,22 +1,14 @@
 class CommentsController < ApplicationController
-    def create
-        @tweet = Tweet.find(params[:tweet_id])
-        
-        @comment = @tweet.comments.build(comment_params)
-        if @comment.save
-            message = { notice: "Comment saved!" }
-        else 
-            message = { error: @comment.errors.full_messages.to_sentence }
-            
-        end
-        
-        redirect_to tweet_path(@tweet), flash: message
-    end
+	def create
+  @comment = Comment.new(comment_params)
+  @comment.article_id = params[:article_id]
 
-private
+  @comment.save
 
-def comment_params
-    params.require(:comment).permit(:content)
+  redirect_to article_path(@comment.article)
 end
 
+def comment_params
+  params.require(:comment).permit(:author_name, :body)
+end
 end
