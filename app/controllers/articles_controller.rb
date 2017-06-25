@@ -41,12 +41,4 @@ def update
 
   redirect_to article_path(@article)
 end
-def new
-  @comment = Comment.new
-  @comment.article_id = @article.id
-
-  redirect_to article_path(@comment.article)
-end
-
-
 end

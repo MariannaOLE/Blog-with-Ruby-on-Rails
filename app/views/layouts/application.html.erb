@@ -7,6 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navigation-top site-navigation-fixed">
+				<div class="wrap">
+					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
+	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false"><svg class="icon icon-bars" aria-hidden="true" role="img"> <use href="#icon-bars" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bars"></use> </svg><svg class="icon icon-close" aria-hidden="true" role="img"> <use href="#icon-close" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use> </svg>Menu</button>
+	<div class="menu-top-menu-container"><ul id="top-menu" class="menu"><li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-20"><a href="http://inmar.group">Home</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://inmar.group/our-services/">Our services</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item current_page_parent menu-item-22"><a href="https://inmar.group/usefull/">Usefull</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://inmar.group/contact/">Contact us</a></li>
+</ul></div>
+	</nav><!-- #site-navigation -->
+				</div><!-- .wrap -->
+			</div>
 
 <p class="flash"><%= flash.notice %> </p>
 <%= yield %>
