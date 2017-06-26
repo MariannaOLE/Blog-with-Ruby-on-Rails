@@ -16,3 +16,13 @@
 h1 {
 	margin-top: 0px;
 }
+.nav>li>a {
+    font-size: 130%;
+}
+.featurette-heading 
+{
+    font-size: 30px;
+}
+h1 {
+    font-family: "Yanone Kaffeesatz", sans;
+}

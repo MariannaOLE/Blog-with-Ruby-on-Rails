@@ -31,9 +31,21 @@
   <li role="presentation"><%= link_to "Blog", articles_path %></li>
 </ul>
 <p class="flash"><%= flash.notice %> </p>
-<%= yield %>
+  <div>
+    <div>
+      <%= yield %>
+    </div>
+  </div><!-- /.container -->
+<hr>
+<h6>
+  <% if logged_in? %>
+  <%= "Logged in as #{current_user.email}" %>
+  <%= link_to "(logout)", logout_path %>
+  <% else %>
+  <%= link_to "(login)", login_path %>
+  <% end %>
+</h6>
 
-<hr class="featurette-divider">
 
       <!-- FOOTER -->
       <footer>
@@ -41,7 +53,6 @@
         <p>&copy; 2017 Marianna OLE &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
-    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
