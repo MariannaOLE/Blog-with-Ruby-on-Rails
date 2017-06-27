@@ -2,7 +2,7 @@
 div.field_with_errors label{color: red; font-weight:bold}
 div.field_with_errors input{border: 3px solid red}
 html {
-    background: #97bfe1;
+    background: #f5f4f2;
     -moz-background-size: 80px 80px;
     -webkit-background-size: 80px 80px;
     -o-background-size: 80px 80px;
