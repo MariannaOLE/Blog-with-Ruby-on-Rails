@@ -10,9 +10,9 @@ end
 def destroy
   @comment = Comment.find(params[:id])
   @comment.destroy
-  flash.notice = "Article '#{@article.title}' Deleted!"
+  flash.notice = "Comment by '#{@comment.author_name}' Deleted!"
 
-  redirect_to articles_path
+  redirect_to articles_path(@comment.article)
 
 end
 
