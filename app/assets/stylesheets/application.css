@@ -29,6 +29,13 @@ h1 {
     padding: 20px 0 20px;
     position: relative;
 }
+.timeline-panel {
+    background-color: #fdfdfd
+}
+.top-button, a.new_article, .article_actions a[href$='edit'], .article_actions a[data-method='delete']{
+    background-image: linear-gradient(#ffffff,#999999);
+    color: #262424;
+}
 
     .timeline:before {
         top: 0;
