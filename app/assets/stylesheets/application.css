@@ -36,6 +36,7 @@ h1 {
     background-image: linear-gradient(#ffffff,#999999);
     color: #262424;
 }
+strong {font-weight: bold}
 
     .timeline:before {
         top: 0;
