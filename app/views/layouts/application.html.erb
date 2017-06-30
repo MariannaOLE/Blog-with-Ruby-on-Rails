@@ -2,6 +2,10 @@
 <html>
 <head>
   <title><%= if content_for?(:title) then yield(:title) + ' | ' end %> Marianna OLE</title>
+  <meta name='description'
+      content='<%= yield_meta_tag(:description, 'Default description') %>' />
+  <meta name='keywords'
+      content='<%= yield_meta_tag(:keywords, 'defaults,ruby,rails') %>' />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
