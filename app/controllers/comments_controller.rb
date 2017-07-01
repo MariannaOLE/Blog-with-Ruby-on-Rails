@@ -12,8 +12,7 @@ def destroy
   @comment.destroy
   flash.notice = "Comment by '#{@comment.author_name}' Deleted!"
 
-  redirect_to articles_path(@comment.article)
-
+  redirect_to article_path(@comment.article)
 end
 
 def comment_params

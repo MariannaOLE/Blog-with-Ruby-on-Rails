@@ -37,6 +37,9 @@ h1 {
     color: #262424;
 }
 strong {font-weight: bold}
+.timeline-body {
+    margin-top: 12px;
+}
 
     .timeline:before {
         top: 0;
