@@ -13,6 +13,8 @@ gem 'sqlite3', group: :development # Added development group.
 gem 'pg', group: :production # Added postgres and made it production only.
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+gem 'carrierwave'
+gem 'mini_magick'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Use SCSS for stylesheets
