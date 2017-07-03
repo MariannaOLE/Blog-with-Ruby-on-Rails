@@ -41,6 +41,11 @@ strong {font-weight: bold}
     margin-top: 12px;
 }
 
+.featurette-heading {
+    margin-top: 0px;
+}
+
+
     .timeline:before {
         top: 0;
         bottom: 0;
