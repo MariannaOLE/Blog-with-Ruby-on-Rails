@@ -16,13 +16,16 @@ Please visit http://www.techladies.co/techladies-bootcamp-3 for more details.
     * Link to my Facebook page
     * Link to my Twitter page
     * Email address
+
 There is a navigation bar with hyperlinks to all the above pages. 
+
   5.  My Blog page includes some blog posts. 
     * There is  a form to create new blog posts.
     * Blog posts are saving to a database.
     * CRUD operations for existing blog posts.
 
 Something for brownie points 🍪 
+
 I added some features onto my app:
 * A photo carousel on the Home page.
 * Some photos in  My projects page.
@@ -40,7 +43,7 @@ I like brownies 🍪🍪, so that please find additionally:
 
 ### 3. Credits ###
 A special thanks to our industry experts who helped me make this website possible!
-I attended all three Pre-Bootcamp Workshops and the the list of online resources was very helpful https://github.com/TechLadies/prebootcamp-workshops-2017
+I attended all three Pre-Bootcamp Workshops and the list of online resources was very helpful https://github.com/TechLadies/prebootcamp-workshops-2017
 
 
 ### 4. Meta ### 
